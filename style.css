@@ -1,0 +1,333 @@
+*,::before,::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.titre
+{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font: normal bold 50px / 1 'oswald';
+}
+
+.title
+{
+    text-align: center;
+    margin-top: 60px;
+    font: normal bold 6vw / 1 'kenia';
+}
+
+form
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.champ
+{
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 9999px;
+    background: #ddd;
+    outline: none;
+    border: none;
+    font: normal bold 20px / 1 'oswald';
+}
+
+.submit
+{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    border: none;
+    outline: none;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 99999px;
+    background: #333;
+    font: normal bold 20px / 1 'oswald';
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.text
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 99999px;
+    border: 2px solid outset;
+}
+
+.submit > a
+{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+
+/* Admin part */
+
+.admin-sec
+{
+    width: 100%;
+    height: 100vh;
+    background: no-repeat center / cover url(img/globe.jpg);
+}
+
+.admin-section
+{
+    width: 50%;
+    max-width: 600px;
+    min-width: 400px;
+    height: 70%;
+    /* background: #f1f1f1; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px 2px black ;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo-box
+{
+    width: 50%;
+    max-width: 250px;
+    min-width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.admin-img
+{
+    width: 100%;
+    height: auto;
+}
+
+.admin-onglet
+{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+.admin-btn
+{
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    margin-top: 70px;
+    text-align: center;
+    padding: 60px 30px;
+    text-decoration: none;
+    color: black;
+    font: normal bold 20px / 1 'kenia';
+    border-radius: 30px;
+}
+
+.admin-btn:hover
+{
+    color: #f1f1f1;
+}
+
+.c1
+{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 79%, rgba(252,176,69,1) 100%);
+
+    /* background: #3d3d3d; */
+}
+
+.c2
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 70%, rgba(0,212,255,1) 100%);
+
+    /* background: #3f3f3f; */
+}
+
+.admin-title
+{
+    text-align: center;
+    font: normal bold 50px / 1 'oswald';
+    color: #f1f1f1;
+}
+
+
+
+
+/*  Enregistrement et tableau*/
+
+.enregistrement
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    background: no-repeat center / cover url(img/globe.jpg);
+    z-index: -1;
+}
+
+
+.sec-table
+{
+    margin-top: 50px;
+    background: white;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1200px;
+    height: 80%;
+    min-height: 700px;
+    padding-top: 40px;
+    border-radius: 20px;
+    overflow-y: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bloc-enrg
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.enrg-title
+{
+    display: inline-block;
+    font: normal bold  70px / 1 "oswald";
+    color: #333;
+    /* margin-bottom: 50px; */
+}
+
+.enrg-title::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+    background: #333;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.enrg-title:hover::after
+{
+    transform: scale(1);
+}
+
+.btn-table
+{
+    width: 150px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 10px;
+    left: 70%;
+}
+
+
+.tableau-enrg
+{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: kenia;
+    border-radius: 50px;
+}
+
+.tableau-enrg  thead tr h1
+{
+    text-align: left;
+}
+
+.tableau-enrg thead
+{
+    background: #333;
+    color: #f1f1f1;
+    text-align: left;
+}
+.tableau-enrg thead th
+{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.tableau-enrg  tr td
+{
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.tableau-enrg  tr:nth-child(even)
+{
+    background: #d3d3d3;
+}
+
+.btn-tab
+{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.sp1
+{
+    background: rgb(11, 96, 122);
+}
+
+.sp2
+{
+    background: rgb(255, 0, 0);
+    position: relative;
+    left: 15px;
+}
+
+.sp3
+{
+    background: rgb(0, 180, 0);
+    font: normal lighter 25px / 1 'oswald';
+    position: relative;
+    left: 15px;
+}
+
+span a
+{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+
+
