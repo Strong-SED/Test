@@ -49,7 +49,7 @@
                     <td>
                         <span class="btn-tab sp1  bg-primary"><a href="update.php?id=<?php echo $row["id"] ?>">Modifier</a></span>
 
-                        <span class="btn-tab sp2 bg-danger"><a href="php/delete.php?id=<?php echo $row["id"] ?>">Supprimer</a></span>
+                        <span class="btn-tab sp2 bg-danger"><a href="php/delete.php?id=<?php echo $row["id"] ?>" onclick="return confirm('Voulez-vous supprimer ce champ')">Supprimer</a></span>
                     </td>
 
                 </tr>
