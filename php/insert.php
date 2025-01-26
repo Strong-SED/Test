@@ -62,8 +62,7 @@
         header("location: ../enrg.php");
     }
 
-    function anticheat($data)
-    {
+    function anticheat($data){
         $data = trim($data);
         $data = htmlspecialchars($data);
         $data = stripslashes($data);
